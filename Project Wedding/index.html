@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Ardian & Yulia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('replicate-prediction-qqdg7ijb6jxs5g7sjt3ew5l7fe.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Wedding</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Galeri Foto</a></li>
+        </ul>
+    </nav>    
+    <div class="container">
+        <center>
+            <section id="welcome" class="reveal">
+                <h2>Welcome to Our Wedding </h2>
+                <p>We are excited to share our joy with you! </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio eos iste corrupti voluptatem! 
+                    Asperiores error facere ab consequatur! Reiciendis odio eaque delectus omnis,
+                     possimus nemo veniam repellendus ut praesentium!</p>
+                <img id="weddingImage" src="cat.jpg" alt="Wedding Image">
+            </section>
+
+            <section id="countdown">
+                <h2>Countdown to Our Wedding</h2>
+                <div id="timer"></div>
+            </section>
+        </center>
+
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <form id="rsvpForm" action="rsvp.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="wish_message">Kalimat Ucapan:</label>
+                <input type="text" id="wish_message" name="wish_message" required>
+                <label for="attend">Apakah akan datang?</label>
+                <select id="attend" name="attend">
+                    <option value="yes">Ya, Saya akan datang</option>
+                    <option value="no">Maaf, tidak bisa datang</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="messages">
+            <h2>Pesan Terbaru</h2>
+            <div id="messageContainer"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <audio id="bgMusic" autoplay loop>
+        <source src="Marry You.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+</body>
+</html>
